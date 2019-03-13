@@ -13,10 +13,10 @@ const Input: React.SFC<{}> = () => (
       </IonItem>
     </form>
 
-    <label className="label" htmlFor="name">
+    {/* <label className="label" htmlFor="name">
       Name
     </label>
-    <input className="input" type="text" id="name" />
+    <input className="input" type="text" id="name" /> */}
 
     <h2>Example usage</h2>
 

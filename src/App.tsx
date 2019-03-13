@@ -28,6 +28,7 @@ import Chip from "./components/Chip";
 import Input from "./components/Input";
 import LinkComponent from "./components/Link";
 import Radio from "./components/Radio";
+import Search from "./components/Search";
 import Select from "./components/Select";
 import Textarea from "./components/Textarea";
 
@@ -77,6 +78,9 @@ class App extends Component {
                     <IonItem>
                       <Link to="/link">Link</Link>
                     </IonItem>
+                    <IonItem>
+                      <Link to="/search">Search</Link>
+                    </IonItem>
                   </IonList>
                 </IonContent>
               </IonMenu>
@@ -99,6 +103,7 @@ class App extends Component {
                   <Route path="/badge" component={Badge} />
                   <Route path="/textarea" component={Textarea} />
                   <Route path="/link" component={LinkComponent} />
+                  <Route path="/search" component={Search} />
                 </div>
               </IonPage>
             </IonSplitPane>
