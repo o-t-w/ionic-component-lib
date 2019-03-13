@@ -85,7 +85,7 @@ class App extends Component {
                 </IonContent>
               </IonMenu>
               <IonPage id="main">
-                <div className="components-container">
+                <div className="@large:margin-left components-container">
                   <Route
                     path="/"
                     exact

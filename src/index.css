@@ -60,12 +60,16 @@ form ion-item {
 
 .components-container {
   display: block !important;
-  margin-left: auto;
-  margin-right: auto;
   width: 650px;
   max-width: 100%;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (min-width: 600px) {
+  .\@large\:margin-left {
+    margin-left: 60px;
+  }
 }
 
 ion-anchor {
