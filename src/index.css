@@ -16,6 +16,11 @@ body {
   margin-top: 5px;
 }
 
+.input:focus {
+  border: solid rgb(58, 116, 232) 2px;
+  outline: 0;
+}
+
 .label {
   font-weight: 600;
 }
@@ -32,6 +37,12 @@ body {
 
 ion-anchor {
   text-decoration: underline;
+}
+
+/* utilities */
+
+.mt10 {
+  margin-top: 10px;
 }
 
 .max500 {

@@ -26,8 +26,18 @@ const Input: React.SFC<{}> = () => (
         </IonItem>
 
         <IonItem>
-          <IonLabel position="stacked">City</IonLabel>
-          <IonInput />
+          <IonLabel position="stacked">Password</IonLabel>
+          <IonInput type="password" />
+        </IonItem>
+
+        <IonItem>
+          <IonLabel position="stacked">Phone Number</IonLabel>
+          <IonInput type="tel" />
+        </IonItem>
+
+        <IonItem>
+          <IonLabel position="stacked">Age</IonLabel>
+          <IonInput type="number" />
         </IonItem>
       </IonList>
       <IonButton expand="block">Submit</IonButton>

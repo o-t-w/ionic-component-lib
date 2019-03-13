@@ -19,18 +19,18 @@ const Radio: React.SFC<{}> = () => (
         </IonListHeader>
 
         <IonItem>
-          <IonLabel>Biff</IonLabel>
-          <IonRadio slot="start" value="biff" checked />
+          <IonLabel>Ribena</IonLabel>
+          <IonRadio slot="start" value="ribena" checked />
         </IonItem>
 
         <IonItem>
-          <IonLabel>Griff</IonLabel>
-          <IonRadio slot="start" value="griff" />
+          <IonLabel>Lucozade</IonLabel>
+          <IonRadio slot="start" value="lucozade" />
         </IonItem>
 
         <IonItem>
-          <IonLabel>Buford</IonLabel>
-          <IonRadio slot="start" value="buford" />
+          <IonLabel>Orangina</IonLabel>
+          <IonRadio slot="start" value="orangina" />
         </IonItem>
       </IonRadioGroup>
     </IonList>
