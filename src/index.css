@@ -93,3 +93,7 @@ ion-anchor {
 .border-bottom {
   border-bottom: solid 3px currentColor;
 }
+
+.\@small:hide {
+  display: none;
+}

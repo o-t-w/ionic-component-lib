@@ -30,6 +30,7 @@ import LinkComponent from "./components/Link";
 import Radio from "./components/Radio";
 import Search from "./components/Search";
 import Select from "./components/Select";
+import Spinner from "./components/Spinner";
 import Textarea from "./components/Textarea";
 
 class App extends Component {
@@ -81,6 +82,9 @@ class App extends Component {
                     <IonItem>
                       <Link to="/search">Search</Link>
                     </IonItem>
+                    <IonItem>
+                      <Link to="/spinner">Spinner</Link>
+                    </IonItem>
                   </IonList>
                 </IonContent>
               </IonMenu>
@@ -104,6 +108,7 @@ class App extends Component {
                   <Route path="/textarea" component={Textarea} />
                   <Route path="/link" component={LinkComponent} />
                   <Route path="/search" component={Search} />
+                  <Route path="/spinner" component={Spinner} />
                 </div>
               </IonPage>
             </IonSplitPane>
