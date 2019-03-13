@@ -5,7 +5,7 @@ import React from "react";
 const Checkbox = props => {
   return (
     <>
-      <h1>Checkbox</h1>
+      <h1 className="pb7 border-bottom">Checkbox</h1>
       <IonList>
         {/*-- Default Checkbox --*/}
         <IonItem lines="none">

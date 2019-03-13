@@ -4,7 +4,7 @@ import React from "react";
 
 const Badge: React.SFC<{}> = () => (
   <>
-    <h1>Badge</h1>
+    <h1 className="pb7 border-bottom">Badge</h1>
     {/*-- Default --*/}
     <IonBadge>99</IonBadge>
 

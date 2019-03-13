@@ -4,12 +4,14 @@ import React from "react";
 
 const Input: React.SFC<{}> = () => (
   <>
-    <h1>Input</h1>
+    <h1 className="pb7 border-bottom">Input</h1>
 
-    <IonItem>
-      <IonLabel position="stacked">Name</IonLabel>
-      <IonInput />
-    </IonItem>
+    <form action="">
+      <IonItem>
+        <IonLabel position="stacked">Name</IonLabel>
+        <IonInput />
+      </IonItem>
+    </form>
 
     <label className="label" htmlFor="name">
       Name

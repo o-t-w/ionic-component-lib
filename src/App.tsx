@@ -82,6 +82,13 @@ class App extends Component {
               </IonMenu>
               <IonPage id="main">
                 <div className="components-container">
+                  <Route
+                    path="/"
+                    exact
+                    render={props => {
+                      return <h1>Choose a component</h1>;
+                    }}
+                  />
                   <Route path="/button" component={Button} />
                   <Route path="/card" component={Card} />
                   <Route path="/checkbox" component={Checkbox} />

@@ -1,3 +1,9 @@
+/* variables!! */
+:root {
+  --suntory-primary: #5ac5d8;
+  --ion-color-primary: var(--suntory-primary);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,11 +15,23 @@ body {
 }
 
 .input {
-  border: solid black 2px;
+  border: solid black 1px;
   width: 300px;
   height: 35px;
   display: block;
   margin-top: 5px;
+  border-radius: 0;
+  box-shadow: none;
+  height: 40px;
+  font-weight: 600;
+  padding: 20px 11px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
 }
 
 .input:focus {
@@ -23,6 +41,21 @@ body {
 
 .label {
   font-weight: 600;
+}
+
+/* .ion-page {
+  background-color: rgb(245, 245, 245);
+}
+
+ion-list {
+  --ion-background-color: transparent;
+} */
+
+form ion-item {
+  background-color: white;
+  margin-top: 10px;
+  --padding-start: 0;
+  --inner-padding-end: 0;
 }
 
 .components-container {
@@ -45,6 +78,14 @@ ion-anchor {
   margin-top: 10px;
 }
 
+.pb7 {
+  padding-bottom: 7px;
+}
+
 .max500 {
   max-width: 500px;
+}
+
+.border-bottom {
+  border-bottom: solid 3px currentColor;
 }

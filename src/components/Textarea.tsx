@@ -4,12 +4,14 @@ import React from "react";
 
 const Textarea: React.SFC<{}> = () => (
   <>
-    <h1>Textarea</h1>
+    <h1 className="pb7 border-bottom">Textarea</h1>
 
-    <IonItem>
-      <IonLabel position="stacked">Description</IonLabel>
-      <IonTextarea rows={2} />
-    </IonItem>
+    <form action="">
+      <IonItem>
+        <IonLabel position="stacked">Description</IonLabel>
+        <IonTextarea rows={2} />
+      </IonItem>
+    </form>
 
     <h2>Example usage</h2>
 

@@ -47,7 +47,7 @@ const objectOptions = [
 
 const Select: React.SFC<{}> = () => (
   <>
-    <h1>Select</h1>
+    <h1 className="pb7 border-bottom">Select</h1>
     <IonList>
       <IonListHeader>Single Selection</IonListHeader>
 

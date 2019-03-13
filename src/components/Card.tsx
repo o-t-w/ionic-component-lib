@@ -14,7 +14,7 @@ import React, { Fragment } from "react";
 const Card = props => {
   return (
     <Fragment>
-      <h1>Card</h1>
+      <h1 className="pb7 border-bottom">Card</h1>
       <IonCard>
         <IonCardHeader>
           <IonCardSubtitle>Card Subtitle</IonCardSubtitle>

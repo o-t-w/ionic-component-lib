@@ -11,7 +11,7 @@ import React from "react";
 
 const Radio: React.SFC<{}> = () => (
   <>
-    <h1>Radio</h1>
+    <h1 className="pb7 border-bottom">Radio</h1>
     <IonList>
       <IonRadioGroup>
         <IonListHeader>

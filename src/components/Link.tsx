@@ -4,7 +4,7 @@ import React from "react";
 function LinkComponent() {
   return (
     <>
-      <h1>Link</h1>
+      <h1 className="pb7 border-bottom">Link</h1>
       <p>
         Links are{" "}
         <IonAnchor href="https://www.suntorybeverageandfood-europe.com/">
