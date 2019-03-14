@@ -58,6 +58,10 @@ form ion-item {
   --inner-padding-end: 0;
 }
 
+ion-label {
+  font-size: 16px !important;
+}
+
 .components-container {
   display: block !important;
   width: 650px;
