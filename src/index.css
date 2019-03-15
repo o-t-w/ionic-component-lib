@@ -76,6 +76,10 @@ ion-anchor {
   text-decoration: underline;
 }
 
+ion-card {
+  margin: 0 !important;
+}
+
 /* utilities */
 
 .mt10 {
@@ -100,6 +104,7 @@ ion-anchor {
 
 .cols-2 {
   display: grid;
+  grid-gap: 15px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -109,6 +114,10 @@ ion-anchor {
 
 .p10 {
   padding: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
 }
 
 .mt0 {

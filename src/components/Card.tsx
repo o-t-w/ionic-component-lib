@@ -73,7 +73,8 @@ const Card = props => {
       <h2>Example usage</h2>
 
       <IonSegment
-        class="ios"
+        value={String(colCount)}
+        class="mb10"
         mode="ios"
         onIonChange={e => console.log("Segment selected", e.detail.value)}
       >
@@ -81,18 +82,14 @@ const Card = props => {
           mode="ios"
           checked
           onClick={() => setColCount(1)}
-          value="one"
+          value="1"
         >
           <IonLabel>One</IonLabel>
         </IonSegmentButton>
-        <IonSegmentButton mode="ios" onClick={() => setColCount(2)} value="two">
+        <IonSegmentButton mode="ios" onClick={() => setColCount(2)} value="2">
           <IonLabel>Two</IonLabel>
         </IonSegmentButton>
-        <IonSegmentButton
-          mode="ios"
-          onClick={() => setColCount(3)}
-          value="three"
-        >
+        <IonSegmentButton mode="ios" onClick={() => setColCount(3)} value="3">
           <IonLabel>Three</IonLabel>
         </IonSegmentButton>
       </IonSegment>
