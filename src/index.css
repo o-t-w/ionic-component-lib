@@ -102,3 +102,39 @@ ion-anchor {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.flex {
+  display: flex;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.right {
+  right: 0;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.absolute {
+  position: absolute;
+}

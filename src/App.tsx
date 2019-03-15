@@ -3,11 +3,11 @@ import "@ionic/core/css/ionic.bundle.css";
 
 import { IonApp, IonContent } from "@ionic/react";
 import {
+  IonButtons,
   IonHeader,
   IonItem,
   IonList,
   IonMenu,
-  IonButtons,
   IonMenuButton,
   IonPage,
   IonSplitPane,
@@ -86,14 +86,16 @@ class App extends Component {
                 </IonContent>
               </IonMenu>
               <IonPage id="main">
-                <IonHeader>
+                {/* <IonHeader>
                   <IonToolbar color="primary">
-                    <IonButtons slot="start">
-                      <IonMenuButton></IonMenuButton>
-                    </IonButtons>
+                    <IonButtons slot="start"> */}
+
+                <IonMenuButton class="right absolute m10 z2" />
+
+                {/* </IonButtons>
                   </IonToolbar>
-                </IonHeader>
-                <IonContent class='ion-padding'>
+                </IonHeader> */}
+                <IonContent class="ion-padding">
                   <Route
                     path="/"
                     exact
