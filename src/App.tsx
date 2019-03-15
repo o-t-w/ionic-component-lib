@@ -3,16 +3,13 @@ import "@ionic/core/css/ionic.bundle.css";
 
 import { IonApp, IonContent } from "@ionic/react";
 import {
-  IonButton,
-  IonCard,
   IonHeader,
   IonItem,
   IonList,
   IonMenu,
+  IonButtons,
   IonMenuButton,
-  IonMenuToggle,
   IonPage,
-  IonRouterOutlet,
   IonSplitPane,
   IonTitle,
   IonToolbar
@@ -41,7 +38,7 @@ class App extends Component {
           <IonApp>
             <IonSplitPane contentId="main">
               {/*--  our side menu  --*/}
-              <IonMenu>
+              <IonMenu contentId="main">
                 <IonHeader no-border>
                   <IonToolbar>
                     <IonTitle>Components</IonTitle>
@@ -89,7 +86,14 @@ class App extends Component {
                 </IonContent>
               </IonMenu>
               <IonPage id="main">
-                <div className="@large:margin-left components-container">
+                <IonHeader>
+                  <IonToolbar color="primary">
+                    <IonButtons slot="start">
+                      <IonMenuButton></IonMenuButton>
+                    </IonButtons>
+                  </IonToolbar>
+                </IonHeader>
+                <IonContent class='ion-padding'>
                   <Route
                     path="/"
                     exact
@@ -109,7 +113,7 @@ class App extends Component {
                   <Route path="/link" component={LinkComponent} />
                   <Route path="/search" component={Search} />
                   <Route path="/spinner" component={Spinner} />
-                </div>
+                </IonContent>
               </IonPage>
             </IonSplitPane>
           </IonApp>
