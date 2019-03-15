@@ -7,11 +7,16 @@ import {
   IonCardTitle,
   IonIcon,
   IonItem,
-  IonLabel
+  IonLabel,
+  IonSegment,
+  IonSegmentButton,
+  IonToolbar
 } from "@ionic/react";
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 const Card = props => {
+  const [colCount, setColCount] = useState(1);
+
   return (
     <Fragment>
       <h1 className="pb7 border-bottom mt0">Card</h1>
@@ -66,7 +71,36 @@ const Card = props => {
       </IonCard>
 
       <h2>Example usage</h2>
-      <div className="cols-2">
+
+      <IonSegment
+        class="ios"
+        mode="ios"
+        onIonChange={e => console.log("Segment selected", e.detail.value)}
+      >
+        <IonSegmentButton
+          mode="ios"
+          checked
+          onClick={() => setColCount(1)}
+          value="one"
+        >
+          <IonLabel>One</IonLabel>
+        </IonSegmentButton>
+        <IonSegmentButton mode="ios" onClick={() => setColCount(2)} value="two">
+          <IonLabel>Two</IonLabel>
+        </IonSegmentButton>
+        <IonSegmentButton
+          mode="ios"
+          onClick={() => setColCount(3)}
+          value="three"
+        >
+          <IonLabel>Three</IonLabel>
+        </IonSegmentButton>
+      </IonSegment>
+
+      <div
+        style={{ gridTemplateColumns: `repeat(${colCount}, 1fr)` }}
+        className="cols-2"
+      >
         <IonCard>
           <IonCardHeader>
             <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
