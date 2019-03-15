@@ -66,7 +66,7 @@ const Card = props => {
       </IonCard>
 
       <h2>Example usage</h2>
-      <div className="grid">
+      <div className="cols-2">
         <IonCard>
           <IonCardHeader>
             <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
