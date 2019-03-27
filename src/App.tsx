@@ -17,6 +17,7 @@ import {
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 import React, { Component } from "react";
 
+import Actionsheet from "./components/Actionsheet";
 import Alert from "./components/Alert";
 import Badge from "./components/Badge";
 import Button from "./components/Button";
@@ -31,6 +32,7 @@ import Search from "./components/Search";
 import Select from "./components/Select";
 import Spinner from "./components/Spinner";
 import Textarea from "./components/Textarea";
+import Toast from "./components/Toast";
 
 class App extends Component {
   render() {
@@ -90,6 +92,12 @@ class App extends Component {
                     <IonItem>
                       <Link to="/alert">Alert</Link>
                     </IonItem>
+                    <IonItem>
+                      <Link to="/actionsheet">Actionsheet</Link>
+                    </IonItem>
+                    <IonItem>
+                      <Link to="/toast">Toast</Link>
+                    </IonItem>
                   </IonList>
                 </IonContent>
               </IonMenu>
@@ -125,6 +133,8 @@ class App extends Component {
                   <Route path="/spinner" component={Spinner} />
                   <Route path="/popover" component={Popover} />
                   <Route path="/alert" component={Alert} />
+                  <Route path="/actionsheet" component={Actionsheet} />
+                  <Route path="/toast" component={Toast} />
                 </IonContent>
               </IonPage>
             </IonSplitPane>
