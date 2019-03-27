@@ -1,6 +1,13 @@
+@import "styles/colors";
+@import "styles/flex";
+@import "styles/typography";
+@import "styles/spacing";
+@import "styles/sizing";
+@import "styles/misc";
+
 /* variables!! */
 :root {
-  --suntory-primary: #5ac5d8;
+  --suntory-primary: #1ab7d2;
   --ion-color-primary: var(--suntory-primary);
 }
 

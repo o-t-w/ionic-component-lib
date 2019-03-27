@@ -24,6 +24,7 @@ import Checkbox from "./components/Checkbox";
 import Chip from "./components/Chip";
 import Input from "./components/Input";
 import LinkComponent from "./components/Link";
+import Popover from "./components/Popover";
 import Radio from "./components/Radio";
 import Search from "./components/Search";
 import Select from "./components/Select";
@@ -82,6 +83,9 @@ class App extends Component {
                     <IonItem>
                       <Link to="/spinner">Spinner</Link>
                     </IonItem>
+                    <IonItem>
+                      <Link to="/popover">Popover</Link>
+                    </IonItem>
                   </IonList>
                 </IonContent>
               </IonMenu>
@@ -115,6 +119,7 @@ class App extends Component {
                   <Route path="/link" component={LinkComponent} />
                   <Route path="/search" component={Search} />
                   <Route path="/spinner" component={Spinner} />
+                  <Route path="/popover" component={Popover} />
                 </IonContent>
               </IonPage>
             </IonSplitPane>
