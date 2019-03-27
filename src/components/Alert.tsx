@@ -1,6 +1,5 @@
+import { IonAlert, IonButton } from "@ionic/react";
 import React, { Fragment, useState } from "react";
-
-import { IonAlert } from "@ionic/react";
 
 const Alert = props => {
   const [alertState, setAlertState] = useState({
@@ -14,21 +13,37 @@ const Alert = props => {
 
   return (
     <>
-      <button
+      <IonButton
         onClick={() => setAlertState({ ...alertState, showAlert1: true })}
       >
         one
-      </button>
-      <button
+      </IonButton>
+      <IonButton
         onClick={() => setAlertState({ ...alertState, showAlert2: true })}
       >
         two
-      </button>
-      <button
+      </IonButton>
+      <IonButton
         onClick={() => setAlertState({ ...alertState, showAlert3: true })}
       >
         three
-      </button>
+      </IonButton>
+      <IonButton
+        onClick={() => setAlertState({ ...alertState, showAlert4: true })}
+      >
+        four
+      </IonButton>
+      <IonButton
+        onClick={() => setAlertState({ ...alertState, showAlert5: true })}
+      >
+        five
+      </IonButton>
+      <IonButton
+        onClick={() => setAlertState({ ...alertState, showAlert6: true })}
+      >
+        six
+      </IonButton>
+
       <IonAlert
         isOpen={alertState.showAlert1}
         onDidDismiss={() => setAlertState({ ...alertState, showAlert1: false })}
