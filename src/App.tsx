@@ -17,6 +17,7 @@ import {
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 import React, { Component } from "react";
 
+import Alert from "./components/Alert";
 import Badge from "./components/Badge";
 import Button from "./components/Button";
 import Card from "./components/Card";
@@ -86,6 +87,9 @@ class App extends Component {
                     <IonItem>
                       <Link to="/popover">Popover</Link>
                     </IonItem>
+                    <IonItem>
+                      <Link to="/alert">Alert</Link>
+                    </IonItem>
                   </IonList>
                 </IonContent>
               </IonMenu>
@@ -120,6 +124,7 @@ class App extends Component {
                   <Route path="/search" component={Search} />
                   <Route path="/spinner" component={Spinner} />
                   <Route path="/popover" component={Popover} />
+                  <Route path="/alert" component={Alert} />
                 </IonContent>
               </IonPage>
             </IonSplitPane>
